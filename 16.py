@@ -9,8 +9,8 @@ def Reves(a):
         b = x + b
     return b
 
-a = 'Ramis'
+opcio = input ("Escriu que vols al reves: ")
 
 # Aqui sortiràn els resultats
-print('Text original: ', a)
-print('Text canviat: ', Reves(a))
+print('Text original: ', opcio)
+print('Text canviat: ', Reves(opcio))
