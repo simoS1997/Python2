@@ -1,18 +1,14 @@
-def invertir(a):
-    b = list(a)
-    c = b[::-1]
-    r = "".join(c)
-    return r
+def superposicio(a, b):
+    n = 0
+    for e in a:
+        n += b.count(e)
+    if n>0 :
+        return [n , True]
 
-def es_palindrome(a):
-    c = invertir(a)
-    x = 0
-    for i in range(len(a)):
-        if a[i]!=c[1]:
-            x+=1
-    if x==0:
-        return True
-    else:
-        return False
-
-x = input("Introdueix una ")
+a=input("Introdueix la primera llista d'elements com un string, sense espais: ")
+b=input("Introdueix la segona llista d'elements com un string, sense espais: ")
+c,d =superposicio(a,b)
+if (c==0):
+    print("Les dues llistes no tenen cap element en comú.")
+else:
+    print("Les dues llistes ", c, " elements en comú")

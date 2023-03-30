@@ -1,20 +1,16 @@
+# Definim una funció
+def Reves(a):
+    # Indicam quina ha de ser la variable
+    b = ''
 
-def sumarllista(a):
-	sumatori = 0
-	for i in a:
-		sumatori +=1
-	return sumatori
+    # Ordenam quin és el loop
+    for x in a:
+        # Aqui giram l'ordre
+        b = x + b
+    return b
 
+opcio = input ("Escriu que vols al reves: ")
 
-def Llistat_multiplicat(llista):
-
-	# Multiplicar un per un
-	resultat = 1
-	for x in llista:
-		resultat *= x
-	return resultat
-
-x = [1,2,3,4,5,6]
-print("El sumatori és: ",sumarllista(x))
-print("El multiplicat és: ",Llistat_multiplicat(x))
-
+# Aqui sortiràn els resultats
+print('Text original: ', opcio)
+print('Text canviat: ', Reves(opcio))

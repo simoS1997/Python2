@@ -1,16 +1,18 @@
-# Definim una funció
-def Reves(a):
-    # Indicam quina ha de ser la variable
-    b = ''
+def invertir(a):
+    b = list(a)
+    c = b[::-1]
+    r = "".join(c)
+    return r
 
-    # Ordenam quin és el loop
-    for x in a:
-        # Aqui giram l'ordre
-        b = x + b
-    return b
+def es_palindrome(a):
+    c = invertir(a)
+    x = 0
+    for i in range(len(a)):
+        if a[i]!=c[1]:
+            x+=1
+    if x==0:
+        return True
+    else:
+        return False
 
-opcio = input ("Escriu que vols al reves: ")
-
-# Aqui sortiràn els resultats
-print('Text original: ', opcio)
-print('Text canviat: ', Reves(opcio))
+x = input("Introdueix una ")

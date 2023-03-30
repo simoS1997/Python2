@@ -1,12 +1,20 @@
-# Donat un caràcter que ens torni true si és una vocal i fals si no ho és
-def vocal(a):
 
-    if (a=='a' or a=='A' or a=='e' or a=='E' or a=='i' or a=='I' or a=='o' or a=='O' or a=='u' or a=='U'):
-        return True
-    else:
-        return False
-    
-# Programa principal
+def sumarllista(a):
+	sumatori = 0
+	for i in a:
+		sumatori +=1
+	return sumatori
 
-a = input("Escriu un caràcter: ")
-print("Si posa *True* és una vocal si posa *False* és una consonant: ",vocal(a))
+
+def Llistat_multiplicat(llista):
+
+	# Multiplicar un per un
+	resultat = 1
+	for x in llista:
+		resultat *= x
+	return resultat
+
+x = [1,2,3,4,5,6]
+print("El sumatori és: ",sumarllista(x))
+print("El multiplicat és: ",Llistat_multiplicat(x))
+
